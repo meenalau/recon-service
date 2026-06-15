@@ -1,7 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8080/api/v1";
-
+//const BASE_URL = "http://localhost:8080/api/v1";
+//throught docker
+const BASE_URL = "/api/v1";
 export const createTrade = (trade) => {
   return axios.post(
     `${BASE_URL}/trades`,

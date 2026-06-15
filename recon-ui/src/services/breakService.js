@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_URL =
-  "http://localhost:8080/api/v1/recon/breaks";
+//const API_URL =  "http://localhost:8080/api/v1/recon/breaks";
+const BASE_URL = "/api/v1";
 
 export const fetchBreaks = async () => {
 
