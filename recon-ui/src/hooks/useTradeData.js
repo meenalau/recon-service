@@ -42,6 +42,7 @@ export const useTradeData = () => {
    */
   const addTrade = async (trade) => {
     const newTrade = await createTrade(trade);   // throws on non-2xx
+      alert("adding new trade");
     setTrades((prev) => [newTrade, ...prev]);
     return newTrade;
   };
